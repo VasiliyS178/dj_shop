@@ -6,6 +6,7 @@ from django.shortcuts import render
 def index(request):
     context = {
         'title': 'Django Shop',
+        'main_page': 'Django Shop',
         'header': 'Django Store',
         'user': 'User Name'
     }
@@ -14,7 +15,8 @@ def index(request):
 
 def products(request):
     context = {
-        'title': 'Django Shop',
+        'title': 'Django Catalog',
+        'main_page': 'Django Shop',
         'header': 'Django Store',
         'user': 'User Name',
         'products': [
